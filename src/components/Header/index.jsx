@@ -1,7 +1,7 @@
-import React from 'react'
 import styled from 'styled-components'
 
 import hamburger from '../../assets/hamburger.svg'
+import Dropdown from '../Dropdown'
 
 const HeaderWrapper = styled.div`
   background-color: #caff4e;
@@ -37,27 +37,14 @@ const Button = styled.button`
   }
 `
 
-const ProfileBox = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 6px;
-`
-
-const ProfileImage = styled.img`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-`
-
-const ProfileName = styled.p`
-  font-weight: bold;
-`
-
-const ProfileHi = styled.p`
-  font-weight: 400;
-`
-
 const Header = () => {
+
+  const options = ['Editar Pefil', 'Confingurações', 'Sair']
+  const defaultText = {
+    name: 'Estevão Ferreira',
+    urlProfile: 'https://avatars.githubusercontent.com/u/60045348?v=4'
+  }
+
   return (
     <>
       <HeaderWrapper>
@@ -66,11 +53,10 @@ const Header = () => {
             <img src={hamburger} alt="hamburger" />
           </Button>
         </BamburgerBox>
-        <ProfileBox>
-          <ProfileHi>Olá</ProfileHi>
-          <ProfileName>Estevão Ferreira</ProfileName>
-          <ProfileImage src="https://avatars.githubusercontent.com/u/39769751?v=4" alt="profile" />
-        </ProfileBox>
+        <Dropdown
+          options={options}
+          defaultText={defaultText}
+        />
       </HeaderWrapper>
     </>
   )
