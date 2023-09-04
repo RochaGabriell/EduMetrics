@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ContainerWrapper = styled.div`
-  background-image: linear-gradient(to bottom, #00676e, #008c58);
+  background-color: ${({ theme }) => theme.colors.background};
   display: flex;
   flex-direction: column;
   padding: 20px;

@@ -1,10 +1,12 @@
 import { Outlet } from "react-router-dom"
-import styled from "styled-components"
+import { styled, ThemeProvider } from "styled-components"
 
 import Menu from "../components/Menu"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Container from "../components/Container"
+import themes from '../styles/themes/index'
+import { useState } from "react"
 
 const ContentWrapper = styled.div`
   display: grid;
@@ -19,17 +21,25 @@ const ContainerRoot = styled.div`
 
 function App() {
 
+  const [theme, setTheme] = useState('ligth')
+
+  function handleChangerTheme() {
+    setTheme((prevState) => prevState === 'dark' ? 'ligth' : 'dark')
+  }
+
   return (
-    <ContentWrapper>
-      <Menu />
-      <ContainerRoot>
-        <Header />
-        <Container>
-          <Outlet />
-        </Container>
-        <Footer />
-      </ContainerRoot>
-    </ContentWrapper>
+    <ThemeProvider theme={themes[theme]}>
+      <ContentWrapper>
+        <Menu changerTheme={handleChangerTheme} />
+        <ContainerRoot>
+          <Header />
+          <Container>
+            <Outlet />
+          </Container>
+          <Footer />
+        </ContainerRoot>
+      </ContentWrapper>
+    </ThemeProvider>
   )
 }
 

@@ -9,7 +9,7 @@ const ProfileBox = styled.div`
   border-radius: 10px;
 
   &:hover {
-    background-color: #f5f5f5;
+    background-color: ${({ theme }) => theme.colors.hover};
   }
 `
 
