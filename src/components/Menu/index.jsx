@@ -29,7 +29,7 @@ const Menu = (props) => {
             </MenuListItem>
             <p>Páginas</p>
             <MenuListItem>
-              <MenuListItemLink to="/home">
+              <MenuListItemLink to="/">
                 <img src={home} alt="Home" />
                 Home
               </MenuListItemLink>

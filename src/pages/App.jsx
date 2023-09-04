@@ -4,7 +4,6 @@ import { styled, ThemeProvider } from "styled-components"
 import Menu from "../components/Menu"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import Container from "../components/Container"
 import themes from '../styles/themes/index'
 import { useState } from "react"
 
@@ -17,6 +16,13 @@ const ContentWrapper = styled.div`
 const ContainerRoot = styled.div`
   display: grid;
   grid-template-rows: 64px auto 64px;
+`
+
+const Container = styled.div`
+  background-color: ${({ theme }) => theme.colors.background};
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 `
 
 function App() {

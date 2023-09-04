@@ -8,7 +8,6 @@ const Dropdown = ({ options, defaultText }) => {
   const [state, setState] = useState(false)
 
   const changeState = (optionName) => {
-    console.log(optionName)
     setState(optionName);
   };
   

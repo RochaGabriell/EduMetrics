@@ -1,13 +1,12 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const MenuWrapper = styled.div`
   position: block;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
   background-color: ${({ theme }) => theme.colors.secondary};
-
 `
 
 const MenuItem = styled.div`
@@ -54,7 +53,7 @@ const MenuListItem = styled.li`
   padding: 0;
 `
 
-const MenuListItemLink = styled.a`
+const MenuListItemLink = styled(Link)`
   display: flex;
   align-items: center;
   padding: 10px 4px;
