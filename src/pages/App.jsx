@@ -9,7 +9,7 @@ import { useState } from "react"
 
 const ContentWrapper = styled.div`
   display: grid;
-  grid-template-columns: 260px auto;
+  grid-template-columns: ${props => props.$visMenu ? '250px auto' : '0 auto'};
   min-height: 100vh;
 `
 
@@ -28,17 +28,22 @@ const Container = styled.div`
 function App() {
 
   const [theme, setTheme] = useState('ligth')
+  const [visMenu, setVisMenu] = useState(true)
 
   function handleChangerTheme() {
     setTheme((prevState) => prevState === 'dark' ? 'ligth' : 'dark')
   }
 
+  function handleVisMenu() {
+    setVisMenu((prevState) => !prevState)
+  }
+
   return (
     <ThemeProvider theme={themes[theme]}>
-      <ContentWrapper>
-        <Menu changerTheme={handleChangerTheme} />
+      <ContentWrapper $visMenu={visMenu}>
+        <Menu changerTheme={handleChangerTheme} visMenu={visMenu} />
         <ContainerRoot>
-          <Header />
+          <Header handleVisMenu={handleVisMenu} />
           <Container>
             <Outlet />
           </Container>

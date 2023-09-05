@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import styled from 'styled-components'
 
 import { ProfileBox, ProfileHi, ProfileName, ProfileImage, Dropdownwrapper } from './styles'
 
@@ -13,9 +12,8 @@ const Dropdown = ({ options, defaultText }) => {
   
   return (
     <>
-      <ProfileBox onClick={() =>
-        changeState(!state)
-      }>
+      {/* <ProfileBox onClick={() => changeState(!state)}> */}
+      <ProfileBox>
         <ProfileHi>Olá</ProfileHi>
         <ProfileName>{defaultText.name}</ProfileName>
         <ProfileImage src={defaultText.urlProfile} alt="profile" />

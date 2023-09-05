@@ -2,6 +2,8 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import App from './pages/App'
 import Home from './pages/Home'
+import IdentForm from './pages/IdentForm'
+import Contact from './pages/Contact'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 
@@ -25,12 +27,16 @@ const routes = createBrowserRouter([
       },
       {
         path: '/contact',
-        element: <Home />
+        element: <Contact />
       },
       {
         path: '/about',
         element: <About />
       },
+      {
+        path: '/IdentForm',
+        element: <IdentForm />
+      }
     ]
   }
 ])

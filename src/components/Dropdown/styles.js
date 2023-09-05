@@ -6,7 +6,8 @@ const ProfileBox = styled.div`
   padding: 8px;
   gap: 6px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  width: 220px;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover};
@@ -28,20 +29,29 @@ const ProfileHi = styled.p`
 `
 
 const Dropdownwrapper = styled.div`
-  display: ${props => (
-    props.$state ? 'block' : 'none'
-  )};
-  width: 200px;
+  display: ${props => props.$state ? 'block' : 'none'};
+  width: 220px;
   position: absolute;
-  background-color: #f5f5f5;
+  background-color: ${({ theme }) => theme.colors.primary};
   padding: 8px;
-  top: 65px;
-  right: 28px;
+  top: 66px;
+  right: 20px;
+  border-radius: 0 0 10px 10px;
 
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+
+  li {
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  li:hover {
+    background-color: ${({ theme }) => theme.colors.hover};
   }
 `
 

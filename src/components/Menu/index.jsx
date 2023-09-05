@@ -1,12 +1,11 @@
-import React from 'react'
-
 import logo from '../../assets/genetic-data.svg'
 import dashboard from '../../assets/dashboard.svg'
 import home from '../../assets/home-icon.svg'
 import form from '../../assets/form-icon.svg'
 import about from '../../assets/about-icon.svg'
 import contact from '../../assets/contact-icon.svg'
-import  {MenuWrapper, MenuItem, MenuLogo, MenuList, MenuListItem, MenuListItemLink, DarkModeToggle} from './style'
+
+import { MenuWrapper, MenuItem, MenuLogo, MenuList, MenuListItem, MenuListItemLink, DarkModeToggle } from './style'
 
 const Menu = (props) => {
   return (
@@ -17,7 +16,10 @@ const Menu = (props) => {
           <MenuLogo>
             <img src={logo} alt="Logo" />
             <p>IFPI - Campus Corrente</p>
-            <DarkModeToggle onChange={props.changerTheme} />
+            {props.visMenu ?
+              <DarkModeToggle onChange={props.changerTheme} /> :
+              null
+            }
           </MenuLogo>
 
           <MenuList>
