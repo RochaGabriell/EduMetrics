@@ -5,7 +5,7 @@ import form from '../../assets/form-icon.svg'
 import about from '../../assets/about-icon.svg'
 import contact from '../../assets/contact-icon.svg'
 
-import { MenuWrapper, MenuItem, MenuLogo, MenuList, MenuListItem, MenuListItemLink, DarkModeToggle } from './style'
+import { MenuWrapper, MenuItem, MenuLogo, MenuList, MenuListItem, MenuListItemLink, DarkModeToggle } from './styles'
 
 const Menu = (props) => {
   return (

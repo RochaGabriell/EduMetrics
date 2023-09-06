@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const ProfileBox = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 8px;
   gap: 6px;
   cursor: pointer;

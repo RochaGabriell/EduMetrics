@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import App from './pages/App'
 import Home from './pages/Home'
-import IdentForm from './pages/IdentForm'
+import EvaluationForm from './pages/EvaluationForm'
 import Contact from './pages/Contact'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
@@ -23,7 +23,7 @@ const routes = createBrowserRouter([
       },
       {
         path: '/form',
-        element: <Home />
+        element: <EvaluationForm />
       },
       {
         path: '/contact',
@@ -33,10 +33,6 @@ const routes = createBrowserRouter([
         path: '/about',
         element: <About />
       },
-      {
-        path: '/IdentForm',
-        element: <IdentForm />
-      }
     ]
   }
 ])

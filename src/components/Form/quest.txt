@@ -1,0 +1,35 @@
+Avaliação de Professores:
+1. Como você avaliaria o conhecimento e expertise do professor em relação ao conteúdo da disciplina?
+2. Qual é a sua opinião sobre a capacidade do professor de explicar os conceitos de forma clara e compreensível?
+3. Como você avalia a disponibilidade do professor para esclarecer dúvidas e oferecer suporte fora das aulas regulares?
+4. Em relação ao cumprimento do programa de ensino e cronograma de aulas, como você classificaria o desempenho do professor?
+5. Que nota você daria para a capacidade do professor de estimular a participação dos alunos e promover discussões em sala de aula?
+6. Como você avalia a utilização de recursos didáticos, como slides, materiais online, etc., pelo professor para enriquecer as aulas?
+7. Que nota você daria para a abordagem do professor em relação às avaliações e feedback fornecido aos alunos?
+8. Em relação ao respeito e consideração demonstrados pelo professor em relação aos alunos, como você classificaria sua conduta?
+9. Qual é a sua percepção em relação à justiça e imparcialidade do professor na avaliação do desempenho dos alunos?
+10. Como você avaliaria a atitude do professor em relação ao desenvolvimento pessoal e acadêmico dos alunos?
+
+Avaliação do Curso:
+1. Como você avaliaria a relevância do currículo do curso em relação à sua área de estudo?
+2. Que nota você daria para a organização e estrutura das disciplinas ao longo do curso?
+3. Como você avaliaria a qualidade dos materiais didáticos e recursos de aprendizagem fornecidos pelo curso?
+4. Qual é a sua opinião sobre a variedade de opções eletivas oferecidas pelo curso para personalização do currículo?
+5. Em relação à carga de trabalho e exigência das avaliações, como você classificaria o curso?
+6. Que nota você daria para a capacidade do curso de promover o desenvolvimento de habilidades práticas e profissionais?
+7. Como você avalia a disponibilidade de orientação acadêmica e suporte aos estudantes?
+8. Em relação às oportunidades de estágio, intercâmbio ou atividades extracurriculares, que nota você daria para o curso?
+9. Qual é a sua percepção em relação à atualização e relevância das informações e conteúdos ministrados no curso?
+10. Como você avaliaria a preparação proporcionada pelo curso para o mercado de trabalho ou continuação dos estudos?
+
+Avaliação da Faculdade:
+1. Que nota você daria para a infraestrutura e recursos disponíveis na faculdade, como biblioteca, laboratórios, etc.?
+2. Como você avalia a comunicação e transparência da faculdade em relação a informações acadêmicas e administrativas?
+3. Qual é a sua percepção em relação à eficácia do suporte administrativo oferecido pela faculdade, como atendimento ao aluno?
+4. Como você avalia as oportunidades de networking e conexões oferecidas pela faculdade?
+5. Que nota você daria para as iniciativas da faculdade em relação à inclusão e diversidade?
+6. Qual é a sua opinião sobre a disponibilidade de bolsas de estudo, auxílios financeiros e oportunidades de financiamento?
+7. Como você avalia a capacidade da faculdade de promover eventos acadêmicos, palestras e atividades extracurriculares?
+8. Que nota você daria para a qualidade dos serviços de tecnologia da informação e recursos online oferecidos pela faculdade?
+9. Qual é a sua percepção em relação à reputação e reconhecimento da faculdade na sua área de estudo?
+10. Como você avaliaria a eficácia da faculdade em preparar os alunos para o mercado de trabalho ou continuação dos estudos?

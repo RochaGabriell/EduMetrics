@@ -14,6 +14,7 @@ const ContentWrapper = styled.div`
 `
 
 const ContainerRoot = styled.div`
+  width: 100%;
   display: grid;
   grid-template-rows: 64px auto 64px;
 `
