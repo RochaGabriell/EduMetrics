@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 import logo from '../../assets/genetic-data.svg'
 import dashboard from '../../assets/dashboard.svg'
 import home from '../../assets/home-icon.svg'
@@ -8,6 +10,24 @@ import contact from '../../assets/contact-icon.svg'
 import { MenuWrapper, MenuItem, MenuLogo, MenuList, MenuListItem, MenuListItemLink, DarkModeToggle } from './styles'
 
 const Menu = (props) => {
+
+  const [isChecked, setIsChecked] = useState(false)
+
+  useEffect(() => {
+    const storageValue = localStorage.getItem('theme')
+
+    if (JSON.parse(storageValue) === 'dark') {
+      setIsChecked(true)
+    }
+    else {
+      setIsChecked(false)
+    }
+  }, [])
+
+  const handleDarkModeToggle = () => {
+    setIsChecked(!isChecked)
+  }
+
   return (
     <>
       <MenuWrapper>
@@ -16,9 +36,16 @@ const Menu = (props) => {
           <MenuLogo>
             <img src={logo} alt="Logo" />
             <p>IFPI - Campus Corrente</p>
-            {props.visMenu ?
-              <DarkModeToggle onChange={props.changerTheme} /> :
-              null
+            {
+              props.visMenu ?
+                <DarkModeToggle
+                  onChange={() => {
+                    props.toggleTheme()
+                    handleDarkModeToggle()
+                  }}
+                  checked={isChecked}
+                />
+                : null
             }
           </MenuLogo>
 

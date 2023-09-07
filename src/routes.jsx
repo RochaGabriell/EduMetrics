@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 
-import App from './pages/App'
+import Base from './pages/Base'
 import Home from './pages/Home'
 import EvaluationForm from './pages/EvaluationForm'
 import Contact from './pages/Contact'
@@ -10,7 +10,7 @@ import NotFound from './pages/NotFound'
 const routes = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Base />,
     errorElement: <NotFound />,
     children: [
       {
