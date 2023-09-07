@@ -1,15 +1,23 @@
 import { styled } from "styled-components"
 
 const ContentWrapper = styled.div`
-  display: grid;
-  grid-template-columns: ${props => props.$visMenu ? '250px auto' : '0 auto'};
+  display: flex;
   min-height: 100vh;
+  width: 100%;
 `
 
 const ContainerRoot = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-rows: 64px auto 64px;
+  display: flex;
+  flex-direction: column;
+  width: calc(${props => props.$visMenu ? '100% - 250px' : '100%'});
+  height: 100%;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const Container = styled.div`
@@ -17,6 +25,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  height: calc(100% - 128px);
 `
 
 export { ContentWrapper, ContainerRoot, Container }

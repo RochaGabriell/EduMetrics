@@ -2,9 +2,13 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const MenuWrapper = styled.div`
+  display: ${props => props.$visMenu ? 'block' : 'none'};
+  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 250px;
+  height: 100vh;
   background-color: ${({ theme }) => theme.colors.secondary};
 `
 

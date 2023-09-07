@@ -5,9 +5,13 @@ const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  height: 64px;
   width: 100%;
   padding: 8px 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: row-reverse;
+  }
 `
 
 const BamburgerBox = styled.div`

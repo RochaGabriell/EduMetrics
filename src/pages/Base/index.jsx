@@ -14,7 +14,7 @@ import { ContentWrapper, ContainerRoot, Container } from "./styles"
 function App() {
 
   const [theme, setTheme] = usePersistedState('theme', 'ligth')
-  const [visMenu, setVisMenu] = useState(true)
+  const [visMenu, setVisMenu] = useState(window.innerWidth <= 768 ? false : true)
 
   function handleToggleTheme() {
     setTheme((prevState) => prevState === 'dark' ? 'ligth' : 'dark')
@@ -26,9 +26,9 @@ function App() {
 
   return (
     <ThemeProvider theme={themes[theme]}>
-      <ContentWrapper $visMenu={visMenu}>
+      <ContentWrapper>
         <Menu toggleTheme={handleToggleTheme} visMenu={visMenu} />
-        <ContainerRoot>
+        <ContainerRoot $visMenu={visMenu}>
           <Header handleVisMenu={handleVisMenu} />
           <Container>
             <Outlet />

@@ -1,12 +1,11 @@
 import styled from "styled-components"
 
 const FormWrapper = styled.div`
-  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 0 auto;
-  padding: 40px 0;
-  max-width: 90%;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
 
   h1 {
     font-size: 24px;

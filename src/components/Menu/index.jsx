@@ -30,23 +30,19 @@ const Menu = (props) => {
 
   return (
     <>
-      <MenuWrapper>
+      <MenuWrapper $visMenu={props.visMenu}>
         <MenuItem>
 
           <MenuLogo>
             <img src={logo} alt="Logo" />
             <p>IFPI - Campus Corrente</p>
-            {
-              props.visMenu ?
-                <DarkModeToggle
+            <DarkModeToggle
                   onChange={() => {
                     props.toggleTheme()
                     handleDarkModeToggle()
                   }}
                   checked={isChecked}
                 />
-                : null
-            }
           </MenuLogo>
 
           <MenuList>
